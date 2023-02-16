@@ -1,12 +1,71 @@
 body {
   background-color: #ffffff;
   color: #003366;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 21px;
   min-width: 750px;
-  
   margin: auto;
   margin-top: 10px;
 }
+
+nav {
+  color: #ffffff;
+  background-color: rgb(1, 82, 125, 0.65);
+  text-align: center;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+
+h1 {
+  margin: 0ch;
+}
+
+h2 {
+  font-size: 1.2em;
+  text-shadow: 1px 1px 1px #777;
+}
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+a:hover {
+  color: #162b3b;
+}
+
+dt {
+  color: #5280c5;
+  font-size: 1.1em;
+  font-weight: bold;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+footer {
+  font-size: 0.7em;
+  font-style: italic;
+  text-align: center;
+  background-color: #618aa5;
+  text-align: center;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  width: 100%;
+}
+
+/*  ID'S */
+
+#wrapper {
+  min-width: 700px;
+  padding: 15px;
+  margin-bottom: 10px;
+}
+
+#contact {
+  color: #000000;
+  text-decoration: underline;
+}
+
+/* CLASSES */
 
 .header {
   color: rgb(177, 194, 225, 1);
@@ -24,35 +83,6 @@ body {
   text-indent: 1em;
 }
 
-h1 {
-  margin: 0ch;
-}
-
-h2 {
-  font-size: 1.2em;
-  text-shadow: 1px 1px 1px #777;
-}
-a {
-  text-decoration: none;
-}
-
-dt {
-  color: #5280c5;
-  font-size: 1.1em;
-  font-weight: bold;
-  font-family: Georgia, "Times New Roman", Times, serif;
-}
-
-footer {
-  font-size: 0.7em;
-  font-style: italic;
-  text-align: center;
-  background-color: #aec3e3;
-  text-align: center;
-  padding: 0.5em;
-  width: 100%;
-}
-
 .topnav {
   font-weight: bold;
 }
@@ -61,13 +91,17 @@ footer {
   text-align: center;
   display: inline-block;
   width: 100%;
+  color: #003366;
+  background-color: #f0f0f0;
 }
 
-nav {
-  color: #ffffff;
-  background-color: rgb(1, 82, 125, 0.65);
-  text-align: center;
-  padding: 0.5em;
+.bottomnav a {
+  color: #2b6b99;
+  margin: 10px;
+}
+
+.bottomA {
+  color: #00000c;
 }
 
 .category {
@@ -77,27 +111,28 @@ nav {
 }
 .page {
   background-color: #f0f0f0;
+  border: 5px solid #618aa5;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px 5px #02181e57;
+  z-index: 1;
+  margin: 50px;
 }
 
-#wrapper {
-  min-width: 700px;
-  padding: 15px;
-  margin-bottom: 10px;
-}
-
-#nav {
-  width: 330px;
-  margin-left: 60px;
-  margin: auto;
-  list-style: none;
-  padding-left: 4em;
-  background-color: #f0f0f0;
-}
-#nav li {
-  float: left;
-}
-#nav a {
+nav.topnav a {
   display: inline-block;
   text-align: center;
-  text-decoration: none;
+  vertical-align: middle;
+  padding-top: 10px;
+  margin-left: 20px;
+  margin-right: 10px;
+}
+
+nav.topnav img {
+  display: block;
+  margin: auto;
+}
+
+nav.topnav span {
+  display: block;
+  margin-top: 8px;
 }
